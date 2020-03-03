@@ -46,8 +46,8 @@ func2(data, {app: $axios}).then(res => {
     'aaa': {
       'bbb': {
         'ccc': 'ddd',
-      }
-    }
+      },
+    },
   }
 
   for (let i = 0; i < 10; i++) {
