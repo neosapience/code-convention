@@ -20,6 +20,15 @@ let aa = [
   'aaa',
   'bbb',
 ]
+
+const bb = {
+  first: {
+    ...
+  },
+  second: {
+    ...
+  },
+}
 ```
 
 * function
@@ -36,9 +45,9 @@ func2(data, {app: $axios}).then(res => {
   let data2 = {
     'aaa': {
       'bbb': {
-        'ccc': 'ddd'
-      }
-    }
+        'ccc': 'ddd',
+      },
+    },
   }
 
   for (let i = 0; i < 10; i++) {
