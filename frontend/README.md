@@ -1,6 +1,25 @@
 # Frontend Code Convention
 > [vue style guide](https://vuejs.org/v2/style-guide/#Prop-definitions-essential)
 
+## Installation
+
+### Requirement
+
+- vscode
+  - extensions
+    - eslint
+    - prettier
+    - vetur
+
+### How To Setting
+
+1. run vscode, install eslint, prettier, vetur extension
+2. open setting (`cmd + ,`)
+3. find `format javascript`. unchecked item
+![format javascript setting](screenshot/setting_1.png 'Import')
+3. find `format on save`. check item
+![format javascript setting](screenshot/setting_2.png 'Import')
+
 ## Rules:
 * vue style guide, strong recommended
 * spacing: 2, no tab
@@ -9,6 +28,15 @@
   * template: double quotation, backtick
   * script: single quotation, backtick
   * css: double quotation
+* print width: 200
+* bracket spacing: false
+```js
+/* BAD */
+const data = { key: 'value' } 
+
+/* GOOD */
+const data = {key: 'value'}
+```
 * no `var`, recommended `let`
 * filename:
   * scss, css -> underscore, `-`
@@ -58,7 +86,7 @@ func2(data, {app: $axios}).then(res => {
 })
 ```
 
-```vue
+```html
 <template>
   <div>
     <h1>{{ data }}</h1>
